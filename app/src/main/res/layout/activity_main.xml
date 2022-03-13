@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blood_donor_eligibility_investigation"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/age"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/_1_what_is_your_age"
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="@+id/ageLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/ageLabel"
+        app:layout_constraintLeft_toRightOf="@id/ageLabel"
+        android:layout_marginLeft="15dp"
+        android:hint="18"
+        />
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2_what_is_your_weight"
+        app:layout_constraintTop_toBottomOf="@id/ageLabel"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <RadioGroup
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/weightLabel"
+        app:layout_constraintLeft_toLeftOf="@id/weightLabel"
+        >
+
+        <RadioButton
+            android:id="@+id/lessThan45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_45kg"
+        />
+        <RadioButton
+            android:id="@+id/between45and50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_45kg_50kg"
+            />
+        <RadioButton
+            android:id="@+id/moreThan50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_50kg"
+            />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_3_healthy_and_feeling_well"
+        app:layout_constraintTop_toBottomOf="@id/weight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <Switch
+        android:id="@+id/sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more_than_5_hors_sleep_the_night_before"
+        app:layout_constraintTop_toBottomOf="@id/health"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Button
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/http_www_pdn_gov_my"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sleep"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/link"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/submit"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

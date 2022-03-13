@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">set2CheanKaeLun</string>
+    <string name="healthy_and_feeling_well">3. Healthy and Feeling Well?</string>
+    <string name="blood_donor_eligibility_investigation">Blood Donor Eligibility Investigation</string>
+    <string name="more_than_5_hors_sleep_the_night_before">4. More than 5 hors sleep the night before</string>
+    <string name="_1_what_is_your_age">1. What is your age?</string>
+    <string name="_2_what_is_your_weight">2. What is your weight?</string>
+    <string name="_3_healthy_and_feeling_well">3. Healthy and Feeling Well?</string>
+    <string name="submit">Submit</string>
+    <string name="http_www_pdn_gov_my">More info</string>
+    <string name="eligibility">Eligibility :</string>
+    <string name="ineligible_to_donate">Ineligible to Donate</string>
+    <string name="_45kg"><![CDATA[<45kg]]></string>
+    <string name="_50kg"><![CDATA[>50kg]]></string>
+    <string name="_45kg_50kg">45kg - 50kg</string>
+    <string name="result">Result :</string>
+</resources>
